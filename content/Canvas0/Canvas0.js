@@ -21,12 +21,12 @@
 				let arr = await fileini.arrayBuffer()
 				pos = new Float32Array(arr)
 			}else{
-				pos = [10,10,]
+				pos = [0,0,]
 			}
 			
 			//kotak
 			let x = w/2+pos[0]*9
-			let y = h/2+pos[1]*9
+			let y = h/2-pos[1]*9
 			cx.fillStyle = '#005500ff'
 			cx.fillRect(-11,-11,w+11,h+11,)
 			cx.fillStyle = 'cyan'
