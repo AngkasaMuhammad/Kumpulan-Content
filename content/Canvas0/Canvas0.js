@@ -25,12 +25,14 @@
 			}
 			
 			//kotak
+			let x = w/2+pos[0]*9
+			let y = h/2+pos[1]*9
 			cx.fillStyle = '#005500ff'
 			cx.fillRect(-11,-11,w+11,h+11,)
 			cx.fillStyle = 'cyan'
 			cx.fillRect(
-				pos[0]*9-22,
-				pos[1]*9-22,
+				x-22,
+				y-22,
 				44,
 				44,
 			)
